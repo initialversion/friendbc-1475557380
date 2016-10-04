@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root :to => "videos#index"
   # Routes for the Video resource:
   # CREATE
   get "/videos/new", :controller => "videos", :action => "new"
