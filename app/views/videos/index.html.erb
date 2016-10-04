@@ -15,7 +15,7 @@
 
       <% @videos.each do |video| %>
       <tr>
-        <td><%= video.user_id %></td>
+        <td><%= video.user.created_at %></td>
         <td>
           <a href="/videos/<%= video.id %>" class="btn btn-primary">Show</a>
           <a href="/videos/<%= video.id %>/edit" class="btn btn-warning">Edit</a>
